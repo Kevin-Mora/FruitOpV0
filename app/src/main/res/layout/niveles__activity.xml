@@ -4,45 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/niveles"
     tools:context=".NivelesActivity">
 
-    <Button
-        android:id="@+id/btn_n3"
-        android:layout_width="157dp"
-        android:layout_height="48dp"
-        android:text="NIVEL 3"
-        android:textStyle="bold"
-        app:cornerRadius="30dp"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="361dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btn_n1"
-        android:layout_width="157dp"
-        android:layout_height="45dp"
-        android:text="NIVEL 1"
-        android:textStyle="bold"
-        app:cornerRadius="30dp"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="229dp" />
+        <Button
+            android:id="@+id/btn_n3"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:text="NIVEL 3"
+            android:textStyle="bold"
+            app:cornerRadius="30dp" />
 
-    <Button
-        android:id="@+id/btn_n2"
-        android:layout_width="157dp"
-        android:layout_height="46dp"
-        android:text="NIVEL 2"
-        android:textStyle="bold"
-        app:cornerRadius="30dp"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="298dp" />
+        <Button
+            android:id="@+id/btn_n1"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:text="NIVEL 1"
+            android:textStyle="bold"
+            app:cornerRadius="30dp" />
 
-    <Button
-        android:id="@+id/btn_puntuaciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Puntuaciones "
-        app:cornerRadius="30dp"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="532dp"
-        tools:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_n2"
+            android:layout_width="157dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="0dp"
+            android:text="NIVEL 2"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/btn_puntuaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntuaciones "
+            app:cornerRadius="30dp"
+            tools:textStyle="bold" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

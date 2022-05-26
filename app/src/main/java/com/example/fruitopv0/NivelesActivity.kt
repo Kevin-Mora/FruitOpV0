@@ -18,9 +18,6 @@ class NivelesActivity : AppCompatActivity() {
         // nombreboton.setOnCLickListener{ }) en este caso a la variable intent y nuestro metodo
         // intent que como parametros es this de esta pantalla a, nombre de la otra pantalla
         // por ultimo con startActivity(intent) activamos nuestro intent
-        btn3.setOnClickListener {
-            val intent: Intent = Intent(this, PuntuacionesActivity:: class.java)
-            startActivity(intent )
-        }
+
     }
 }
