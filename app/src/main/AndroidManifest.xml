@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitOpV0">
+        <activity android:name=".Nivel1Activity"></activity>
         <activity
             android:name=".PuntuacionesActivity"
             android:label="@string/title_activity_puntuaciones"
-            android:theme="@style/Theme.FruitOpV0.NoActionBar"></activity>
+            android:theme="@style/Theme.FruitOpV0.NoActionBar" />
         <activity android:name=".NivelesActivity" />
         <activity
             android:name=".ConfiguracionesActivity"

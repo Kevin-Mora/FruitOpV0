@@ -18,9 +18,17 @@ class NivelesActivity : AppCompatActivity() {
         // nombreboton.setOnCLickListener{ }) en este caso a la variable intent y nuestro metodo
         // intent que como parametros es this de esta pantalla a, nombre de la otra pantalla
         // por ultimo con startActivity(intent) activamos nuestro intent
-        btn3.setOnClickListener {
-            val intent: Intent = Intent(this, PuntuacionesActivity:: class.java)
+
+
+
+
+        // Boton para ir a nivel UNO
+        val btn4: Button = findViewById(R.id.btn_n1)
+        // Llamamos a nuestra funcion escucha
+        btn4.setOnClickListener {
+            val intent: Intent = Intent(this, Nivel1Activity:: class.java)
             startActivity(intent )
         }
+
     }
 }

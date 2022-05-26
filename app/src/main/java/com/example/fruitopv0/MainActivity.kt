@@ -31,15 +31,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent )
         }
 
-        val btn3: Button = findViewById(R.id.btn_puntuaciones)
+        //val btn3: Button = findViewById(R.id.btn_puntuaciones)
         // a traves de nuestro boton, llamamos a nuestra funcion escucha(lo que este dentro de
         // nombreboton.setOnCLickListener{ }) en este caso a la variable intent y nuestro metodo
         // intent que como parametros es this de esta pantalla a, nombre de la otra pantalla
         // por ultimo con startActivity(intent) activamos nuestro intent
-        btn3.setOnClickListener {
-            val intent: Intent = Intent(this, PuntuacionesActivity:: class.java)
-            startActivity(intent )
-        }
+
+
+
+
     }
 
 
