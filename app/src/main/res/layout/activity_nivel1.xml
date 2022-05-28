@@ -8,21 +8,52 @@
     android:gravity="bottom|center"
     tools:context=".Nivel1Activity">
 
+    <TextView
+        android:id="@+id/textViewAlmacenado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#4CAF50"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textViewAlmacenadoUps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
     <EditText
         android:id="@+id/textResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
         android:ems="3"
         android:inputType="number"
-        android:layout_marginBottom="33dp"
-        android:textSize="30dp"
-        />
+        android:textSize="30dp" />
 
     <Chronometer
-        android:id="@+id/chronometer"
+        android:id="@+id/chronometerId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowRadius="20"
+        android:text="¡Listo!"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="30dp"
+        tools:backgroundTint="#8BC34A" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
 
 
 </LinearLayout>
