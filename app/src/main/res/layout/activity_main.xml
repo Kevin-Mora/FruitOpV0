@@ -5,17 +5,27 @@
     android:id="@+id/btn_configuraciones"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerVertical="false"
     android:background="@drawable/main_fondo"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="300dp"
+        android:layout_height="200dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="418dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="48dp"
         android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <Button
             android:id="@+id/btn_niveles"
@@ -23,8 +33,7 @@
             android:layout_height="wrap_content"
             android:text="Niveles"
             android:textStyle="bold"
-            app:cornerRadius="30dp"
-            android:shadowRadius="50"/>
+            app:cornerRadius="30dp" />
 
         <Button
             android:id="@+id/button"
