@@ -76,7 +76,7 @@ class Nivel1Activity : AppCompatActivity() {
 
         var almacenaEditText = findViewById<EditText>(R.id.textResultado)
         var almacenadaTextView = findViewById<TextView>(R.id.textViewAlmacenado)
-        var almacenaTextViewUps = findViewById<TextView>(R.id.textViewAlmacenado)
+        //var almacenaTextViewUps = findViewById<TextView>(R.id.textViewAlmacenado)
         almacenadaTextView.text = almacenaEditText.text
 
 
