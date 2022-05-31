@@ -9,11 +9,11 @@
     android:background="@drawable/fondonv1"
     tools:context=".Nivel1Activity">
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/imageViewN1"
         android:layout_width="match_parent"
-        android:layout_height="491dp">
-
-    </RelativeLayout>
+        android:layout_height="436dp"
+        app:srcCompat="@drawable/n1op1" />
 
     <TextView
         android:id="@+id/textViewAlmacenado"
@@ -43,10 +43,6 @@
         android:textStyle="bold|italic"
         app:cornerRadius="30dp"
         tools:backgroundTint="#8BC34A" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp" />
 
     <Chronometer
         android:id="@+id/chronometerId"
