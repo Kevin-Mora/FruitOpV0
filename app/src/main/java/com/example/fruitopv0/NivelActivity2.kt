@@ -4,45 +4,36 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-import android.widget.Chronometer
-import android.widget.ImageView
 
-class Nivel1Activity : AppCompatActivity() {
+class NivelActivity2 : AppCompatActivity() {
 
-    //
+    // Definimos variables
     lateinit var  chronometer: Chronometer
     private lateinit var opera2: ImageView
-    //private lateinit var playBtn :ImageView
     var x = 0
-    //lateinit var editText: EditText
-    //var runningC = true
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nivel1)
+        setContentView(R.layout.activity_nivel2)
 
         // varializamos nuestro chronometro por su ID
-        chronometer = findViewById(R.id.chronometerId3)
+        chronometer = findViewById(R.id.chronometerId2)
         //Lo inicializamos en cuanto entre al nivel
         chronometer.start()
 
 
 
 
-        // varializamos nuestra caja de texto
-        //editText = findViewById(R.id.textResultado)
-        //var editText = findViewById<EditText>(R.id.textResultado)
-
-
-        var almacenaEditText = findViewById<EditText>(R.id.textResultado3)
-        var almacenadaTextView = findViewById<TextView>(R.id.textViewAlmacenado3)
+        var almacenaEditText = findViewById<EditText>(R.id.textResultado2)
+        var almacenadaTextView = findViewById<TextView>(R.id.textViewAlmacenado2)
         //playBtn
-        opera2 = findViewById(R.id.imageViewN3)
+        opera2 = findViewById(R.id.imageViewN2)
 
         almacenadaTextView.text = almacenaEditText.text
 
         //Agregamos la funcionalidad del boton
-        findViewById<Button>(R.id.btnEnviar3).setOnClickListener {
+        findViewById<Button>(R.id.btnEnviar2).setOnClickListener {
 
             addResultado(it)
 
@@ -54,29 +45,26 @@ class Nivel1Activity : AppCompatActivity() {
 
     }
 
+
+    // Funcion de los niveles
     private fun addResultado(view: View){
 
 
-        var almacenaEditText = findViewById<EditText>(R.id.textResultado3)
-        var almacenadaTextView = findViewById<TextView>(R.id.textViewAlmacenado3)
+        var almacenaEditText = findViewById<EditText>(R.id.textResultado2)
+        var almacenadaTextView = findViewById<TextView>(R.id.textViewAlmacenado2)
 
         //var almacenaTextViewUps = findViewById<TextView>(R.id.textViewAlmacenado)
         almacenadaTextView.text = almacenaEditText.text
 
-        //opera2 = findViewById(R.id.btnEnviar)
 
-       // if (x == 1){
-         //   opera2.setImageResource(R.drawable.n1op1)
-       // }
-
-        //OP1 n1o1 51+1
-        if (almacenadaTextView.text.toString() == "52" && x == 0){
+        //OP1
+        if (almacenadaTextView.text.toString() == "112" && x == 0){
             println("hoolaaaa borolas")
             //delay(3000)
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
-            opera2.setImageResource(R.drawable.n1op2)
+            opera2.setImageResource(R.drawable.n2op2)
             x++
 
         }
@@ -84,8 +72,8 @@ class Nivel1Activity : AppCompatActivity() {
             almacenadaTextView.text = ""
 
         println(x)
-        //OP2 n1op2 34+8
-        if (x == 1 && almacenadaTextView.text.toString() == "42" ){
+        //OP2
+        if (x == 1 && almacenadaTextView.text.toString() == "40" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
@@ -96,9 +84,8 @@ class Nivel1Activity : AppCompatActivity() {
             almacenadaTextView.text = ""
 
 
-        // NO ESTAN HECHOS AUN ////////////////////////////////////////////////////////////////////
-        //OP3 n1op3 34+8
-        if (x == 2 && almacenadaTextView.text.toString() == "42" ){
+        //OP3
+        if (x == 2 && almacenadaTextView.text.toString() == "64" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
@@ -108,8 +95,8 @@ class Nivel1Activity : AppCompatActivity() {
         else if( x == 2 )
             almacenadaTextView.text = ""
 
-        //OP4 n1op 29+14
-        if (x == 3 && almacenadaTextView.text.toString() == "43" ){
+        //OP4
+        if (x == 3 && almacenadaTextView.text.toString() == "4" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
@@ -119,8 +106,8 @@ class Nivel1Activity : AppCompatActivity() {
         else if( x == 3 )
             almacenadaTextView.text = ""
 
-        //OP5 n1op 36+36
-        if (x == 4 && almacenadaTextView.text.toString() == "72" ){
+        //OP5
+        if (x == 4 && almacenadaTextView.text.toString() == "11" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
@@ -130,8 +117,8 @@ class Nivel1Activity : AppCompatActivity() {
         else if( x == 4 )
             almacenadaTextView.text = ""
 
-        //OP6 n1op6 44-36
-        if (x == 5 && almacenadaTextView.text.toString() == "8" ){
+        //OP6
+        if (x == 5 && almacenadaTextView.text.toString() == "60" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
@@ -141,8 +128,8 @@ class Nivel1Activity : AppCompatActivity() {
         else if( x == 5 )
             almacenadaTextView.text = ""
 
-        //OP7 n1op 46-26
-        if (x == 6 && almacenadaTextView.text.toString() == "20" ){
+        //OP7
+        if (x == 6 && almacenadaTextView.text.toString() == "66" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
@@ -152,8 +139,8 @@ class Nivel1Activity : AppCompatActivity() {
         else if( x == 6 )
             almacenadaTextView.text = ""
 
-        //OP8 n1op 24-18
-        if (x == 7 && almacenadaTextView.text.toString() == "6" ){
+        //OP8
+        if (x == 7 && almacenadaTextView.text.toString() == "180" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
@@ -163,8 +150,8 @@ class Nivel1Activity : AppCompatActivity() {
         else if( x == 7 )
             almacenadaTextView.text = ""
 
-        //OP9 n1op 50-37
-        if (x == 8 && almacenadaTextView.text.toString() == "13" ){
+        //OP9
+        if (x == 8 && almacenadaTextView.text.toString() == "240" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡correcto!"
             //  cambiando el nivel
@@ -174,8 +161,8 @@ class Nivel1Activity : AppCompatActivity() {
         else if( x == 8 )
             almacenadaTextView.text = ""
 
-        //OP10 n1op 51-39
-        if (x == 9 && almacenadaTextView.text.toString() == "12" ){
+        //OP10
+        if (x == 9 && almacenadaTextView.text.toString() == "48" ){
             almacenaEditText.text.clear()
             almacenadaTextView.text = "¡Felicidades!"
             //  cambiando el nivel
@@ -184,9 +171,7 @@ class Nivel1Activity : AppCompatActivity() {
         }
         else if( x == 9 )
             almacenadaTextView.text = ""
-           // almacenadaTextView.text = "¡Felicidades!"
-
-
+            //almacenadaTextView.text = "¡Felicidades!"
 
 
 
@@ -195,6 +180,4 @@ class Nivel1Activity : AppCompatActivity() {
 
 
     }
-
-
 }

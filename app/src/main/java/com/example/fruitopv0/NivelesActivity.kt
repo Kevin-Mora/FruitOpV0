@@ -22,13 +22,28 @@ class NivelesActivity : AppCompatActivity() {
 
 
 
-        // Boton para ir a nivel UNO
+        // Boton para ir a nivel UNO, DOS Y TRES
         val btn4: Button = findViewById(R.id.btn_n1)
+        val btn5: Button = findViewById(R.id.btn_n2)
+        val btn6: Button = findViewById(R.id.btn_n3)
+
         // Llamamos a nuestra funcion escucha
         btn4.setOnClickListener {
             val intent: Intent = Intent(this, Nivel1Activity:: class.java)
             startActivity(intent )
         }
+
+
+        btn5.setOnClickListener {
+            val intent: Intent = Intent(this, NivelActivity2:: class.java)
+            startActivity(intent )
+        }
+
+        btn6.setOnClickListener {
+            val intent: Intent = Intent(this, Nivel3Activity:: class.java)
+            startActivity(intent )
+        }
+
 
     }
 }

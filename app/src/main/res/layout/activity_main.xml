@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerVertical="false"
-    android:background="@drawable/main_fondo"
+    android:background="@drawable/fondo_main2"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -19,8 +19,8 @@
     <LinearLayout
         android:layout_width="418dp"
         android:layout_height="108dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="55dp"
         android:orientation="vertical"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
 
         <Button
             android:id="@+id/btn_niveles"
-            android:layout_width="183dp"
+            android:layout_width="195dp"
             android:layout_height="wrap_content"
             android:text="Niveles"
             android:textStyle="bold"
@@ -37,7 +37,7 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="183dp"
+            android:layout_width="195dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|clip_horizontal|center|clip_vertical|start|right|top"
             android:layout_marginEnd="318dp"

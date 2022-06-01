@@ -10,13 +10,13 @@
     tools:context=".Nivel1Activity">
 
     <ImageView
-        android:id="@+id/imageViewN1"
+        android:id="@+id/imageViewN3"
         android:layout_width="match_parent"
         android:layout_height="436dp"
         app:srcCompat="@drawable/n1op1" />
 
     <TextView
-        android:id="@+id/textViewAlmacenado"
+        android:id="@+id/textViewAlmacenado3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -25,7 +25,7 @@
         android:textStyle="bold|italic" />
 
     <EditText
-        android:id="@+id/textResultado"
+        android:id="@+id/textResultado3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -34,7 +34,7 @@
         android:textSize="30dp" />
 
     <Button
-        android:id="@+id/btnEnviar"
+        android:id="@+id/btnEnviar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:shadowRadius="20"
@@ -45,7 +45,7 @@
         tools:backgroundTint="#8BC34A" />
 
     <Chronometer
-        android:id="@+id/chronometerId"
+        android:id="@+id/chronometerId3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40dp" />
