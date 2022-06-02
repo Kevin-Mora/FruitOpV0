@@ -69,8 +69,8 @@ class Nivel1Activity : AppCompatActivity() {
          //   opera2.setImageResource(R.drawable.n1op1)
        // }
 
-        //OP1 n1o1 51+1
-        if (almacenadaTextView.text.toString() == "52" && x == 0){
+        //OP1 n1o1 51+15
+        if (almacenadaTextView.text.toString() == "66" && x == 0){
             println("hoolaaaa borolas")
             //delay(3000)
             almacenaEditText.text.clear()
