@@ -10,3 +10,5 @@ FruitOp es un aplicación de android que cuenta y/o contara con los siguientes a
 ● Problemas matemáticos bajo una interfaz de dibujos animados de frutas
 ● Interfaz visual minimalista siguiendo psicología de los colores
 ● Diferentes problemas matemáticos con escalabilidad de dificultad dentro de 3 niveles diferentes con temporizador que representa el puntuaje.
+
+[FruitOp](https://github.com/Kevin-Mora/FruitOpV0/blob/master/diseño1.PNG)
